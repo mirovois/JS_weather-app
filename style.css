@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --color-header: #b06ab3;
+  --color-main: linear-gradient(rgba(253, 45, 97, 100));
+  --cityFont: "Anton", sans-serif;
+}
+html {
+  font-size: 15px;
+}
+
+header {
+  min-height: 8vh;
+  padding: 2px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--color-header);
+}
+
+.weather_wrapper {
+  height: 90vh;
+  background: linear-gradient(to top, #b06ab3, #4568dc);
+}
+#search {
+  position: relative;
+  height: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: lightgray 2px solid;
+}
+label {
+  font-size: 1.1rem;
+  color: antiquewhite;
+}
+input {
+  padding: 3px;
+  opacity: 0.4;
+  margin-left: 4px;
+  margin-right: 6px;
+}
+button {
+  padding: 3px;
+  border-radius: 3px;
+  background-color: #b06ab3;
+  padding: 3px 10px;
+  color: antiquewhite;
+  border: wheat 1px solid;
+  cursor: pointer;
+}
+
+.loading {
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+}
+#weatherInfo_wrapper {
+  height: 70%;
+  text-align: center;
+  padding-top: 2rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#weather_city {
+  font-family: var(--cityFont);
+  font-size: 4rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}

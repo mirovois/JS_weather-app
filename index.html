@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Weather application</title>
+  </head>
+  <body>
+    <header>
+      <h1>Weather App</h1>
+    </header>
+    <div class="weather_wrapper">
+      <div id="search">
+        <label for="city">Choose a city</label>
+        <input type="text" id="city" />
+        <button type="button">Show Weather</button>
+      </div>
+      <div class="loading">loading...</div>
+      <div id="weatherInfo_wrapper">
+        <h1 id="weather_city"></h1>
+        <p class="weather_description"></p>
+        <h1 class="weather_temperature"></h1>
+      </div>
+    </div>
+    <script src="data.js"></script>
+    <script src="config.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
