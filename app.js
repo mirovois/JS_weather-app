@@ -2,11 +2,7 @@
 searchButton.addEventListener("click", searchWeather);
 loadingText.style.display = "none";
 weatherInfo.style.display = "none";
-// function clearSearchField() {
-//   let val = 0;
-//   searchCity.innerHTML = "";
-//   return searchCity;
-// }
+
 function searchWeather() {
   console.log(searchCity.value);
   loadingText.style.display = "block";
