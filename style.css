@@ -52,6 +52,9 @@ button {
   border: wheat 1px solid;
   cursor: pointer;
 }
+button:hover {
+  background-color: #3f2141;
+}
 
 .loading {
   position: absolute;
@@ -63,9 +66,9 @@ button {
   text-align: center;
   padding-top: 2rem;
 
-  display: flex;
+  /* display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: center; */
 }
 #weather_city {
   font-family: var(--cityFont);
@@ -73,4 +76,14 @@ button {
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 3px;
+}
+/* .temperature {
+  display: flex;
+} */
+.tempearature_far,
+.tempearature_cel {
+  display: block;
+}
+.active {
+  background-color: #3f2141;
 }
