@@ -42,7 +42,16 @@ input {
   opacity: 0.4;
   margin-left: 4px;
   margin-right: 6px;
+  /* outline: none; */
+  border: 2px solid rgb(239, 238, 240);
 }
+/* input:not(:placeholder-shown) {
+  border-color: hsl(0, 76%, 50%);
+} */
+input:valid {
+  border-color: rgb(155, 127, 184);
+}
+
 button {
   padding: 3px;
   border-radius: 3px;

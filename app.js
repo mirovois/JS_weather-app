@@ -19,7 +19,7 @@ function searchWeather() {
     alert("Please enter a city");
     loadingText.style.display = "none";
   }
-  var apiKey = "key";
+  var apiKey = "3c10e7d60e81e341c569871ce5f4460b";
   var url =
     "http://api.openweathermap.org/data/2.5/weather?q=" +
     cityName +
@@ -71,6 +71,8 @@ function searchWeather() {
    } )
   .catch(function(error) {
     console.log("error: " + error);
+    loadingText.style.display = "none";
+    alert("Enter a valid city name");
    });  
 }
 
