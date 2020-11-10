@@ -32,7 +32,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  border: lightgray 2px solid;
+  /* border: lightgray 2px solid; */
 }
 label {
   font-size: 1.1rem;
@@ -106,11 +106,19 @@ button:hover {
   height: 70%;
   text-align: center;
   padding-top: 2rem;
-
-  /* display: flex;
-  align-items: center;
-  justify-content: center; */
+  width: fit-content;
 }
+.weatherInfo {
+  display: flex;
+  width: 40%;
+  padding: 1rem;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border: lightgray 2px solid;
+}
+
 #weather_city {
   font-family: var(--cityFont);
   font-size: 4rem;
