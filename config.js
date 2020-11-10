@@ -17,3 +17,5 @@ var celciusButton = document.querySelector('.celcius_button');
 var farenheitButton = document.querySelector('.farenheit_button');
 
 var switchButton = document.querySelector('.switch_button');
+
+var clock = document.getElementById("clock");
