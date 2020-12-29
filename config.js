@@ -19,3 +19,5 @@ var farenheitButton = document.querySelector('.farenheit_button');
 var switchButton = document.querySelector('.switch_button');
 
 var clock = document.getElementById("clock");
+var currentLocation = document.querySelector('.current__location');
+
