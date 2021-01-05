@@ -13,6 +13,24 @@
   <body>
     <header>
       <h1 class="title">Weather App</h1>
+      <!-- <nav>
+        <h2 className="nav__logo">MIROLOGO</h2>
+        <ul className={`${showLinks ? "nav__links show__links " : "nav__links"}`}>
+          {links.map(link =>( 
+            
+              <NavLink key={link.id} exact to={link.url} className="link__item"
+              activeClassName="active">
+              {link.icon}
+              <p>{link.title}</p>
+              </NavLink>
+          
+          ))
+         }         
+        </ul>
+        <IconButton onClick={() =>setShowLinks(!showLinks)}>
+            <MenuIcon />
+        </IconButton>
+      </nav> -->
     </header>
     <div class="weather_wrapper">
       <div id="clock" class="topcorner"></div>
@@ -23,21 +41,26 @@
       </div>
       <div class="loading">loading...</div>
       <div id="weatherInfo_wrapper">
-        <h1 id="weather_city">Montreal</h1>
-        <p class="weather_description">Light rain</p>
-        <div class="temperature">
-          <!-- <h1 class="temperature_far">45°F</h1>
-          <h1 class="temperature_cel">7°C</h1> -->
-          <h1 class="temperature_actual"></h1>
-          <div class="temperature_switch">
-            <button  class="celcius_button" data-temp="celcius">Celcius</button>
-            <button  class="farenheit_button"  data-temp="farenheit">Farenheit</button>
-          </div>
+        <p class="current__location">You are currently located in:</p>
+        <div class="weatherInfo">
+            <h1 id="weather_city">Montreal</h1>
+            <p class="weather_description">Light rain</p>
+            <div class="temperature">
+              <!-- <h1 class="temperature_far">45°F</h1>
+              <h1 class="temperature_cel">7°C</h1> -->
+              <h1 class="temperature_actual"></h1>
+              <div class="temperature_switch">
+                <button  class="celcius_button" data-temp="celcius">Celcius</button>
+                <button  class="farenheit_button"  data-temp="farenheit">Farenheit</button>
+              </div>
+            </div>
+
         </div>
       </div>
     </div>
     <script src="data.js"></script>
     <script src="config.js"></script>
+    <script src="key.js"></script>
     <script src="app.js"></script>
   </body>
 </html>

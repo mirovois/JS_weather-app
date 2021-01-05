@@ -32,7 +32,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  border: lightgray 2px solid;
+  /* border: lightgray 2px solid; */
 }
 label {
   font-size: 1.1rem;
@@ -72,13 +72,15 @@ button:hover {
   top: 2px;
   right: 10px;
   color: #cbcdd4;
+  font-size: calc(0.8rem + 1vw);
 }
 .fancy_link {
   position: relative;
   color: #a7a8ac;
+
   cursor: pointer;
 }
-.fancy_link::after {
+/* .fancy_link::after {
   content: "";
   position: absolute;
   left: 0;
@@ -95,7 +97,7 @@ button:hover {
   cursor: pointer;
   transform: scaleX(1);
   transition: transform 250ms ease-in;
-}
+} */
 
 /* .loading {
   position: absolute;
@@ -106,14 +108,22 @@ button:hover {
   height: 70%;
   text-align: center;
   padding-top: 2rem;
-
-  /* display: flex;
-  align-items: center;
-  justify-content: center; */
+  width: fit-content;
 }
+.weatherInfo {
+  display: flex;
+  width: 40%;
+  padding: 1rem;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border: lightgray 2px solid;
+}
+
 #weather_city {
   font-family: var(--cityFont);
-  font-size: 4rem;
+  font-size: calc(2rem + 1.5vw);
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 3px;
@@ -128,3 +138,96 @@ button:hover {
 .active {
   background-color: #3f2141;
 }
+.current__location {
+  text-align: center;
+  font-size: calc(1.2rem + 1vw);
+  margin-bottom: 0.5rem;
+}
+
+/* === Navbar functionality */
+
+/* nav {
+  position: absolute;
+  min-height: 7vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  background-color: #353139;
+}
+.nav__logo {
+  letter-spacing: 2px;
+  font-family: "Caveat", sans-serif;
+  color: rgb(170, 167, 163);
+  font-size: 1.6rem;
+}
+.nav__links {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  flex: 0.5;
+}
+li :hover {
+  color: rgb(78, 75, 70);
+}
+
+.link__item {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: rgb(170, 167, 163);
+  text-decoration: none;
+}
+.active {
+  color: rgb(240, 237, 234);
+  background: #6b6961;
+  border-radius: 4px;
+}
+nav > .MuiIconButton-root {
+  color: rgb(170, 167, 163);
+  display: none;
+}
+
+@media screen and (max-width: 900px) {
+  .nav__links {
+    flex: 0.8;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    overflow: hidden;
+  }
+  nav > .MuiIconButton-root {
+    color: rgb(170, 167, 163);
+    display: block;
+    padding: 3px;
+  }
+  nav > .MuiIconButton-root:focus {
+    transform: rotate(360deg);
+    transition: transform 0.5s ease-in-out;
+  }
+  nav > .MuiIconButton-root:visited {
+    transform: rotate(360deg);
+    transition: transform 0.5s ease-in-out;
+  }
+
+  .nav__links {
+    position: absolute;
+    right: 0px;
+    display: flex;
+    flex-direction: column;
+    height: 93vh;
+    align-items: center;
+    top: 7vh;
+    width: 100%;
+    background-color: rgb(8, 49, 49);
+    transform: translateX(100%);
+    z-index: 2;
+  }
+  .show__links {
+    transform: translateX(0%);
+    transition: transform 0.5s ease-in;
+  }
+} */
